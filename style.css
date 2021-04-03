@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body {
+  font-family: ui-monospace, monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+main{
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 500px;
+  width: 100%;
+}
+form {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+input { display: none; }
+input:checked + i {
+  background-color: LightSeaGreen;
+}
+i {
+  background: LightSalmon;
+  border-radius: 50%;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+span {
+  padding-top: 0.25rem;
+}
+
+footer{
+  margin-top: auto;
+  padding: 2em;
+  background: #2749a4;
+  background: -moz-linear-gradient(left, #2749a4 0%, #6085b2 100%);
+  background: -webkit-linear-gradient(left, #2749a4 0%, #6085b2 100%);
+  background: -linear-gradient(right, #2749a4 0%, #6085b2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2749a4', 
+    endColorstr='#6085b2', GradientType=1);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 300px) and (max-width: 767px) {
+  main{
+    max-width: 260px;
+  }
+  form {
+    gap: 5px;
+  }
+  i {
+    height: 16px;
+    width: 16px;
+  }
+  footer{
+    padding: 1em;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  footer{
+    padding: 1em;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  main{
+    max-width: 770px;
+  }
+}
+
+@media (min-width: 1441px) {
+  main{
+    max-width: 770px;
+  }
+}
